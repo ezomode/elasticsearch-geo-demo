@@ -1,0 +1,4 @@
+POST        /apartments/all                         controllers.ApartmentController.indexAllApartments()
+POST        /apartments/:id                         controllers.ApartmentController.indexApartment(id:Long)
+GET         /apartments/search                      controllers.ApartmentController.search(q)
+GET         /apartments/byDistance/:distance        controllers.ApartmentController.searchByDistance(distance:Long, lat:Double, lon:Double)
